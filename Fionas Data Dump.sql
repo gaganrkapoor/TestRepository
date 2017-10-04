@@ -1,6 +1,5 @@
 Use [CM_P01]
 GO
-
 ;WITH 
 CTE_v_HS_Operating_System (ResourceID, Caption0) AS (
        SELECT ResourceID, caption0 FROM
@@ -32,6 +31,8 @@ END AS [Owner User],
 v_GS_COMPUTER_SYSTEM.Name0 as [Name0],
 v_R_System.User_Name0 as [User_Name0],
 reverse(left(reverse(v_GS_COMPUTER_SYSTEM.UserName0),charindex('\',reverse(v_GS_COMPUTER_SYSTEM.UserName0),1) - 1))   AS [LastLoggedIn User],
+
+--Added these new comments to check version controlling
 --CASE WHEN v_GS_COMPUTER_SYSTEM.UserName0 IS NOT NULL
 --       THEN 
 --               CASE
