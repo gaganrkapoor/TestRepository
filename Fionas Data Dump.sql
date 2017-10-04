@@ -31,7 +31,7 @@ END AS [Owner User],
 v_GS_COMPUTER_SYSTEM.Name0 as [Name0],
 v_R_System.User_Name0 as [User_Name0],
 reverse(left(reverse(v_GS_COMPUTER_SYSTEM.UserName0),charindex('\',reverse(v_GS_COMPUTER_SYSTEM.UserName0),1) - 1))   AS [LastLoggedIn User],
-
+-- these are the new comments
 --Added these new comments to check version controlling
 --CASE WHEN v_GS_COMPUTER_SYSTEM.UserName0 IS NOT NULL
 --       THEN 
